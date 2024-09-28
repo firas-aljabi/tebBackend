@@ -20,11 +20,13 @@ return new class extends Migration
             $table->string('isPersonal')->nullable();
             $table->string('jobTitle')->nullable();
             $table->string('businessName')->nullable();
-            $table->string('MedicalRank')->nullable();
-            $table->string('SelectedLanguage')->nullable();
+            $table->string('phoneNumberWA')->nullable();
+            $table->string('locationLink')->nullable();
+            $table->string('reservationLink')->nullable();
 
-            
             $table->string('SelectedLanguage')->nullable();
+            
+         //   $table->string('SelectedLanguage')->nullable();
             $table->text('location')->nullable();
             $table->text('bio')->nullable();
             $table->string('cover')->nullable();

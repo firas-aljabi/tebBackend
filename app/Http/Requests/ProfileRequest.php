@@ -26,10 +26,16 @@ class ProfileRequest extends FormRequest
             'lastName' => 'nullable|string|max:255',
             'jobTitle' => 'nullable|string|max:255',
             'businessName' => 'nullable|string|max:255',
-            'MedicalRank' => 'nullable|string|max:255',
+            'phoneNumberWA' => 'nullable|string|max:255',
             'SelectedLanguage' => 'nullable|string|max:255',
             
-            
+
+            'locationLink' => 'nullable|string|max:255',
+
+            'reservationLink' => 'nullable|string|max:255',
+
+
+
             'location' => 'nullable|string|max:255',
             'bio' => 'nullable|string',
             'cover' => 'nullable|image|mimes:jpeg,jpg,png',

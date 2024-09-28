@@ -21,5 +21,8 @@ class DatabaseSeeder extends Seeder
             'uuid' => Str::uuid(),
             'is_admin' => true,
         ]);
+        $this->call(CountrySeeder::class);
+        $this->call(CitySeeder::class);
+
     }
 }

@@ -20,11 +20,10 @@ class ProfileResource extends JsonResource
             'lastName' => $this->lastName,
             'jobTitle' => $this->jobTitle,
             'businessName' => $this->businessName,
-            'MedicalRank' => $this->MedicalRank,
+            'phoneNumberWA' => $this->phoneNumberWA,
             'SelectedLanguage' => $this->SelectedLanguage,
+           
 
-
-  
 
             
             'location' => $this->location,

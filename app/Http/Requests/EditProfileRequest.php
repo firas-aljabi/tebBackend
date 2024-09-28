@@ -26,9 +26,13 @@ class EditProfileRequest extends FormRequest
             'lastName' => 'string|max:255',
             'jobTitle' => 'nullable|string|max:255',
             'businessName' => 'sometimes|string|max:255',
-            'MedicalRank' => 'nullable|string|max:255',
+            'phoneNumberWA' => 'nullable|string|max:255',
             'SelectedLanguage' => 'nullable|string|max:255',
 
+
+            'locationLink' => 'nullable|string|max:255',
+
+            'reservationLink' => 'nullable|string|max:255',
 
             
             'location' => 'sometimes|string|max:255',

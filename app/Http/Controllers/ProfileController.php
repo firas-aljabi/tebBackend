@@ -306,7 +306,7 @@ class ProfileController extends Controller
             $sheet->setCellValue('D'.$row, $user->profile->lastName ?? 'NULL');
             $sheet->setCellValue('E'.$row, $user->profile->jobTitle ?? 'NULL');
             $sheet->setCellValue('F'.$row, $user->profile->businessName ?? 'NULL');
-            $sheet->setCellValue('N'.$row, $user->profile->MedicalRank ?? 'NULL');
+            $sheet->setCellValue('N'.$row, $user->profile->phoneNumberWA ?? 'NULL');
             $sheet->setCellValue('O'.$row, $user->profile->SelectedLanguage ?? 'NULL');
 
             
@@ -384,7 +384,7 @@ class ProfileController extends Controller
             $sheet->setCellValue('D'.$row, $user->profile->lastName ?? 'NULL');
             $sheet->setCellValue('E'.$row, $user->profile->jobTitle ?? 'NULL');
             $sheet->setCellValue('F'.$row, $user->profile->businessName ?? 'NULL');
-            $sheet->setCellValue('N'.$row, $user->profile->MedicalRank ?? 'NULL');
+            $sheet->setCellValue('N'.$row, $user->profile->phoneNumberWA ?? 'NULL');
             $sheet->setCellValue('O'.$row, $user->profile->SelectedLanguage ?? 'NULL');
 
             $sheet->setCellValue('G'.$row, $user->profile->location ?? 'NULL');
@@ -470,8 +470,15 @@ class ProfileController extends Controller
         $sheet->setCellValue('D'.$row, $user->profile->lastName ?? 'NULL');
         $sheet->setCellValue('E'.$row, $user->profile->jobTitle ?? 'NULL');
         $sheet->setCellValue('F'.$row, $user->profile->businessName ?? 'NULL');
-        $sheet->setCellValue('N'.$row, $user->profile->MedicalRank ?? 'NULL');
+        $sheet->setCellValue('N'.$row, $user->profile->phoneNumberWA ?? 'NULL');
         $sheet->setCellValue('O'.$row, $user->profile->SelectedLanguage ?? 'NULL');
+        $sheet->setCellValue('P'.$row, $user->profile->locationLink ?? 'NULL');
+
+        $sheet->setCellValue('Q'.$row, $user->profile->reservationLink ?? 'NULL');
+
+
+       
+
 
         $sheet->setCellValue('G'.$row, $user->profile->location ?? 'NULL');
         $sheet->setCellValue('H'.$row, $user->profile->bio ?? 'NULL');

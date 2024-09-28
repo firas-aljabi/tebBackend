@@ -37,10 +37,14 @@ class ProfilExport implements FromCollection
             'user_last_name',
             'user_jobTitle',
             'user_businessName',
-            'user_MedicalRank',
+            'user_phoneNumberWA',
+            'user_locationLink',
+
+            'user_reservationLink',
+
             'user_SelectedLanguage',
 
-            
+          
             'location',
             'bio',
             'location',

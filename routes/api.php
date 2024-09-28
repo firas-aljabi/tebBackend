@@ -8,6 +8,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ThemeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CountryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,10 @@ Route::get('P_link', [PrimaryLinkController::class, 'index']);
 Route::post('profile/{profile}/visit', [ProfileController::class, 'visitProfile']);
 Route::post('link/{link}/visit', [LinkController::class, 'visitLink']);
 Route::post('/{profile}/primary_link/{PrimaryLink}/visit', [ProfileController::class, 'visitPrimary']);
+
+Route::get('/countries', [CountryController::class, 'index']);
+Route::get('/countries/{id}/cities', [CountryController::class, 'cities']);
+
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::middleware('isAdmin')->group(function () {
@@ -58,6 +63,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
 //    profile
     Route::prefix('profile')->group(function () {
+        
         Route::post('/create_personal_data', [ProfileController::class, 'create_personal_data']);
         Route::post('/create_links', [ProfileController::class, 'create_links']);
         Route::post('/create_other_data', [ProfileController::class, 'create_other_data']);
